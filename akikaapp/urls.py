@@ -10,6 +10,7 @@ from django.urls import path, re_path
 
 app_name = 'akikaapp'
 
+
 urlpatterns = [
     path('', views.news_today, name='newsToday'),
     path('signup/', views.signup, name='signup'),
@@ -20,6 +21,8 @@ urlpatterns = [
     # path('^activate/(?P<uidb64>[0-9A-Za-z_\-]+)/(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]{1,20})/$',
     #     views.activate, name='activat'),
     path('activate/<str:uidb64>/<str:token>/', views.activate, name="activate"),
+    path('<str:room_name>/', views.room, name='room'),
+
     # SEO
 
     # path('sitemap\.xml$', sitemap, {'sitemaps': {'entry': EntrySitemap}},

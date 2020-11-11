@@ -1,25 +1,32 @@
 from channels.generic.websocket import AsyncWebsocketConsumer
 import json
+from asgiref.sync import async_to_sync
 
 
 class DashConsumer(AsyncWebsocketConsumer):
 
-    async def connect(self):
-        # self.groupname = 'dashboard'
-        await self.connect()
+    async def websocket_connect(self, event):
+        user = self.scope['user']
+        self.room_name = f'notification_{user.id}'
 
-        # await self.accept()
+        await self.channel_layer.group_add(
+            self.room_name,
+            self.channel_name)
 
-    async def disconnect(self, close_code):
+        await self.send({
+            'type': 'websocket.accept'
+        })
 
-        await self.disconnect()
+    async def notification_message(self, event):
+        """ Send user notifications. """
 
-    async def receive(self, text_data):
+        await self.send({
+            'type': 'websocket.send',
+            'text': event['data']
+        })
 
-        print('>>>>', text_data)
+    async def websocket_disconnect(self, event):
+        """Discard channel group when socket is disconnected."""
 
-        pass
-
-    # async def deprocessing(self, event):
-    #     valOther = event['value']
-    #     await self.send(text_data=json.dumps({'value': valOther}))
+        await self.channel_layer.group_discard(self.room_name,
+                                               self.channel_name)

@@ -5,7 +5,9 @@ from django.urls import path
 from akikaapp import consumer
 
 websocket_urlPattern = [
-    path('ws/polData/', consumer.DashConsumer),
+    # path('ws/polData/', consumer.DashConsumer),
+    path('ws/akikaapp/(<str:room_name>)/', consumer.DashConsumer),
+
 ]
 
 application = ProtocolTypeRouter({

@@ -95,3 +95,9 @@ def activate(request, uidb64, token):
 
     else:
         return HttpResponse('Activation link is invalid!')
+
+
+def room(request, room_name):
+    return render(request, 'chat/room.html', {
+        'room_name': room_name
+    })

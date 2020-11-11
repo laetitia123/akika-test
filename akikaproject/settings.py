@@ -26,7 +26,7 @@ SECRET_KEY = '(5%8p#(we#2@&wxd0k)k^ufr-heih-js*@c+l4+v_e4+94qdjc'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -79,6 +79,24 @@ TEMPLATES = [
 WSGI_APPLICATION = 'akikaproject.wsgi.application'
 
 ASGI_APPLICATION = 'akikaproject.routing.application'
+# CHANNEL_LAYERS = {
+#     'default': {
+#         'BACKEND': 'channels_redis.core.RedisChannelLayer',
+#         'CONFIG': {
+#             "hosts": [('127.0.0.1', 6379)],
+#         },
+#     },
+# }
+# Channel settings
+
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels_redis.core.RedisChannelLayer',
+        'CONFIG': {
+            "hosts": [('127.0.0.1', 6379)],
+        },
+    },
+}
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

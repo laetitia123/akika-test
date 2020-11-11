@@ -182,27 +182,7 @@ h6 {
   display: none;
 }
 
-#header .logo h1 {
-  font-size: 56px;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-  font-weight: 400;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-}
 
-#header .logo h1 a,
-#header .logo h1 a:hover {
-  color: #413e66;
-  text-decoration: none;
-}
-
-#header .logo img {
-  padding: 0;
-  margin: 7px 0;
-  max-height: 26px;
-}
 
 .main-pages {
   margin-top: 60px;
@@ -532,9 +512,9 @@ h6 {
 }
 
 #about .about-content ul li i {
-  font-size: 20px;
-  padding-right: 4px;
-  color: #1bb1dc;
+  font-size: 40px;
+  padding-right: 8px;
+  color: #f27939;
 }
 
 #about .about-img {
@@ -632,7 +612,7 @@ h6 {
 }
 
 #services .description {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 28px;
   margin-bottom: 0;
   text-align: left;
@@ -1217,7 +1197,7 @@ h6 {
 
 #faq #faq-list a.collapsed {
   /* color: #000; */
-  font-family: fivo sans modern,sans-serif;
+font-family: fivo sans modern,sans-serif;
 justify-content: space-between;
 align-items: flex-start;
 padding: 1rem 1.4375rem;
@@ -1226,6 +1206,7 @@ line-height: 1.2;
 font-weight: 500;
 color: #212836;
 border: 1px solid #dadada;
+background-color:  #dadada;
 cursor: pointer;
 transition: all .2s ease-in-out;
 }
@@ -1510,10 +1491,6 @@ transition: all .2s ease-in-out;
     padding: 15px 0;
   }
 
-  #header .logo h1 {
-    font-size: 28px;
-    padding: 8px 0;
-  }
 
   #why-us .why-us-content {
     padding-top: 30px;

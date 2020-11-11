@@ -21,3 +21,11 @@ class CustomAuthenticationForm(AuthenticationForm):
 class NewsLetterForm(forms.Form):
     your_name = forms.CharField(label='First Name', max_length=30)
     email = forms.EmailField(label='Email', max_length=30)
+
+
+class ComposeForm(forms.Form):
+    message = forms.CharField(
+        widget=forms.TextInput(
+            attrs={"class": "form-control"}
+        )
+    )

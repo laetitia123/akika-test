@@ -61,6 +61,8 @@
           <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
           <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
           <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+
+
           <a class='btn btn-default' style="font-size:18px;" href="{% url 'akikaapp:login' %}">Login</a>
           <a class='btn btn-default' style="font-size:18px;" href="{% url 'akikaapp:signup' %}">Register</a>
           <!-- <a class='btn btn-default'style="font-size:18px;" href="/logout">Logout</a> -->
@@ -72,8 +74,8 @@
 
       <div class="logo float-left">
         <!-- Uncomment below if you prefer to use an image logo -->
-        <h1 class="text-light"><a href="#intro" class="scrollto"><img src="static/img/clients/logo.svg"
-              font-size="400"></a></h1>
+        <a href="#intro"><img src="static/img/clients/logo.svg" style="height: 500px;"></a>
+
         <!-- <a href="#header" class="scrollto"><img src="img/logo.png" alt="" class="img-fluid"></a> -->
       </div>
 
@@ -117,14 +119,14 @@
     <div class="container d-flex h-100">
       <div class="row justify-content-center align-self-center">
         <div class="col-md-6 intro-info order-md-first order-last">
-          <h2>Rapid Solutions<br>for Your <span>Business!</span></h2>
+          <h2><br>for Your <span>COVID-19</span></h2>
           <div>
             <a href="#about" class="btn-get-started scrollto">Get Started</a>
           </div>
         </div>
 
         <div class="col-md-6 intro-img order-md-last order-first">
-          <img src="static/img/number.jpg" alt="" class="img-fluid">
+          <img src="static/img/number-removebg-preview.png" alt="" class="img-fluid">
         </div>
       </div>
 
@@ -143,7 +145,7 @@
 
           <div class="col-lg-5 col-md-6">
             <div class="about-img">
-              <img src="static/img/number.jpg" height="450" alt="">
+              <img src="static/img/doctor.jpg" height="450" alt="">
             </div>
           </div>
 
@@ -151,16 +153,23 @@
             <div class="about-content">
               <h2>About Covid-19</h2>
               <!-- <h3>Odio sed id eos et laboriosam consequatur eos earum soluta.</h3> -->
-              <p>An ongoing worldwide pandemic of coronavirus disease 2019 (COVID-19), a novel infectious disease caused
+              <p style="font-size:18px">An ongoing worldwide pandemic of coronavirus disease 2019 (COVID-19), a novel
+                infectious disease caused
                 by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), was first confirmed to have spread to
                 Italy on 31 January 2020,
                 when two Chinese tourists in Rome tested positive for the virus.</p>
-              <ul>
-                <li><i class="ion-android-checkmark-circle"></i>COVID-19 is the disease caused by the new coronavirus
+              <ul style="font-size:18px">
+                <li><i class="ion-android-checkmark-circle"
+                    style="font-size: 30px;padding-right:10px;color: #f27939;"></i>COVID-19 is the disease caused by
+                  the new coronavirus
                   that emerged in China in December 2019.</li>
-                <li><i class="ion-android-checkmark-circle"></i>At this time, there are no specific vaccines for
+                <li><i class="ion-android-checkmark-circle"
+                    style="font-size: 30px;padding-right:10px;color: #f27939;"></i>At this time, there are no specific
+                  vaccines for
                   COVID-19.</li>
-                <li><i class="ion-android-checkmark-circle"></i> However, there are many ongoing clinical trials
+                <li><i class="ion-android-checkmark-circle"
+                    style="font-size: 30px;padding-right:10px;color: #f27939;"></i> However, there are many ongoing
+                  clinical trials
                   evaluating potential treatments.</li>
               </ul>
             </div>
@@ -179,7 +188,7 @@
 
         <header class="section-header">
           <h3>Prevention</h3>
-          <p>You can protect yourself and help prevent spreading the virus
+          <p style="font-size:18px">You can protect yourself and help prevent spreading the virus
             to others if you:</p>
         </header>
 
@@ -298,27 +307,27 @@
 
       </div>
 
-      <div class="container" style="background-image:url(./static/img/number.jpg);">
+      <div class="container" style="background:url(../static/img/number.jpg);">
         <div class="row counters">
 
           <div class="col-lg-3 col-6 text-center">
             <span data-toggle="counter-up">940,735</span>
-            <p>Total Cases</p>
+            <p style="font-size:25px;font-weight:bold">Total Cases</p>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
             <span data-toggle="counter-up">47,518</span>
-            <p>Total Deaths</p>
+            <p style="font-size:25px;font-weight:bold">Total Deaths</p>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
             <span data-toggle="counter-up">196,221</span>
-            <p>Total Recovered</p>
+            <p style="font-size:25px;font-weight:bold">Total Recovered</p>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
             <span data-toggle="counter-up">696,996</span>
-            <p>Active Cases</p>
+            <p style="font-size:25px;font-weight:bold;color:black">Active Cases</p>
           </div>
 
         </div>
@@ -330,10 +339,10 @@
     <!--==========================
       Features Section
     ============================-->
-    <section id="features">
-      <div class="container">
+    <!-- <section id="features"> -->
+    <!-- <div class="container"> -->
 
-        <!-- <div class="row feature-item">
+    <!-- <div class="row feature-item">
           <div class="col-lg-6 wow fadeInUp">
             <img src="static/img/features-1.svg" class="img-fluid" alt="">
           </div>
@@ -348,7 +357,7 @@
           </div>
         </div> -->
 
-        <div class="row feature-item mt-5 pt-5">
+    <!-- <div class="row feature-item mt-5 pt-5">
           <div class="col-lg-6 wow fadeInUp order-1 order-lg-2">
             <img src="static/img/doctor.jpg" class="img-fluid" alt="">
           </div>
@@ -374,10 +383,11 @@
             </div>
           </div>
 
-        </div>
+        </div> -->
 
-      </div>
-    </section><!-- #about -->
+    <!-- </div> -->
+    <!-- </section> -->
+    <!-- #about -->
 
     <!--==========================
       Pricing Section
@@ -396,19 +406,15 @@
           <!-- Basic Plan  -->
           <div class="col-xs-12 col-sm-4">
             <div class="card">
-              <div class="card-header">
-                <h3><img src="static/img/contact.svg" style="width:50px"></h3>
+              <div class="card-header" style="margin-top:0">
+                <h3><img src="static/img/contact.svg" style="width:60px"></h3>
 
               </div>
               <div class="card-block">
-                <h4 class="card-title">
+                <h4 class="card-title" style="font-weight:500;">
                   Human Contact </h4>
-                <ul class="list-group">
-                  <li class="list-group-item">Odio animi voluptates</li>
-                  <li class="list-group-item">Inventore quisquam et</li>
-                  <li class="list-group-item">Et perspiciatis suscipit</li>
-                  <li class="list-group-item">24/7 Support System</li>
-                </ul>
+                <p>Odio animi voluptates Odio animi voluptatesOdio animi
+                  voluptatesOdio animi voluptatesOdio animi voluptates</p>
                 <!-- <a href="#" class="btn">Choose Plan</a> -->
               </div>
             </div>
@@ -421,14 +427,11 @@
                 <h3><img src="static/img/air.svg" style="width:50px"></h3>
               </div>
               <div class="card-block">
-                <h4 class="card-title">
+                <h4 class="card-title" style="font-weight:500;">
                   Air Transmission </h4>
-                <ul class="list-group">
-                  <li class="list-group-item">Odio animi voluptates</li>
-                  <li class="list-group-item">Inventore quisquam et</li>
-                  <li class="list-group-item">Et perspiciatis suscipit</li>
-                  <li class="list-group-item">24/7 Support System</li>
-                </ul>
+                <p>Odio animi voluptates Odio animi voluptatesOdio animi
+                  voluptatesOdio animi voluptatesOdio animi voluptates</p>
+
                 <!-- <a href="#" class="btn">Choose Plan</a> -->
               </div>
             </div>
@@ -441,14 +444,10 @@
                 <h3><img src="static/img/contamined.svg" style="width:50px"></h3>
               </div>
               <div class="card-block">
-                <h4 class="card-title">
+                <h4 class="card-title" style="font-weight:500;">
                   Contaminated </h4>
-                <ul class="list-group">
-                  <li class="list-group-item">Odio animi voluptates</li>
-                  <li class="list-group-item">Inventore quisquam et</li>
-                  <li class="list-group-item">Et perspiciatis suscipit</li>
-                  <li class="list-group-item">24/7 Support System</li>
-                </ul>
+                <p>Odio animi voluptates Odio animi voluptatesOdio animi
+                  voluptatesOdio animi voluptatesOdio animi voluptates</p>
                 <!-- <a href="#" class="btn">Choose Plan</a> -->
               </div>
             </div>
@@ -462,16 +461,16 @@
       Frequently Asked Questions Section
     ============================-->
     <section id="faq">
-      <div class="container-fluid">
+      <div class="container">
 
         <div class="row">
-          <div class="col-lg-6" style="margin-top:10px">
-            <img src="static/img/asked.jpg" width="453" height="345">
-            <img src="static/img/mask1.jpeg" width="453" height="356" style="margin-left:150px;margin-top:-100px;">
+          <div class="col-lg-5" style="margin-top:10px">
+            <img src="static/img/asked.jpg" width="403" height="575">
+            <img src="static/img/anticeptic.jpeg" width="103" height="106" style="margin-left:350px;margin-top:-200px;">
             ::
 
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-7">
             <header class="section-header">
               <h3 style="color:#f27939;font-size:34px;font-weight:bold">Frequently Asked </h3>
               <h3>Question</h3>
@@ -479,19 +478,22 @@
 
             <ul id="faq-list" class="wow fadeInUp" style="width:500px;margin-left:80px;">
               <li>
-                <a data-toggle="collapse" class="collapsed" href="#faq1">How does covid-19 spread? <i
-                    class="ion-android-remove"></i></a>
+                <a data-toggle="collapse" class="collapsed" href="#faq1" style="font-family: fivo sans modern,sans-serif;border: 1px solid #dadada;
+                background-color:  #f3efef;padding:20;margin-bottom: 20px;">
+                  How does covid-19 spread? <i class="ion-android-remove" style="padding-right:20"></i></a>
                 <div id="faq1" class="collapse" data-parent="#faq-list">
 
                 </div>
               </li>
 
               <li>
-                <a data-toggle="collapse" href="#faq2" class="collapsed">What are The Symptom of Covid-19? <i
-                    class="ion-android-remove"></i></a>
+                <a data-toggle="collapse" href="#faq2" class="collapsed" style="font-family: fivo sans modern,sans-serif;border: 1px solid #dadada;
+                  background-color:  #f3efef;padding:20;margin-bottom: 20px;font-weight:500">What are The Symptom of
+                  Covid-19? <i class="ion-android-remove" style="margin-right: 20px;"></i></a>
                 <div id="faq2" class="collapse" data-parent="#faq-list">
 
-                  <p>The most common symptoms of COVID-19 are fever, tiredness, and dry cough.
+                  <p>The most common symptoms
+                    of COVID-19 are fever, tiredness, and dry cough.
                     Some patients may have aches and pains, nasal congestion, runny nose, sore throat or diarrhea.
                     These symptoms are usually mild and begin gradually. Some people become infected
                     but don’t develop any symptoms and don't feel unwell. Most people (about 80%)
@@ -505,8 +507,10 @@
               </li>
 
               <li>
-                <a data-toggle="collapse" href="#faq3" class="collapsed">Who is at lisk of developing severe illness
-                  quickly? <i class="ion-android-remove"></i></a>
+                <a data-toggle="collapse" href="#faq3" class="collapsed" style="font-family: fivo sans modern,sans-serif;border: 1px solid #dadada;
+                background-color:  #f3efef;padding:20;margin-bottom: 20px;">
+                  Who is at lisk of developing severe illness
+                  quickly? <i class="ion-android-remove" style="margin-right:20px"></i></a>
                 <div id="faq3" class="collapse" data-parent="#faq-list">
                   <p>
                     While we are still learning about how COVID-2019 affects people, older persons and persons with
@@ -516,8 +520,10 @@
               </li>
 
               <li>
-                <a data-toggle="collapse" href="#faq4" class="collapsed">Are antibiotics effective in treating COVID-19?
-                  <i class="ion-android-remove"></i></a>
+                <a data-toggle="collapse" href="#faq4" class="collapsed" style="font-family: fivo sans modern,sans-serif;border: 1px solid #dadada;
+                background-color:  #f3efef;padding:20;margin-bottom: 20px;">
+                  Are antibiotics effective in treating COVID-19?
+                  <i class="ion-android-remove" style="margin-right:20px"></i></a>
                 <div id="faq4" class="collapse" data-parent="#faq-list">
                   <p>
 
@@ -529,8 +535,10 @@
                 </div>
               </li>
               <li>
-                <a data-toggle="collapse" href="#faq5" class="collapsed">Can a person test negative and later test
-                  positive for COVID-19? <i class="ion-android-remove"></i></a>
+                <a data-toggle="collapse" href="#faq5" class="collapsed" style="font-family: fivo sans modern,sans-serif;border: 1px solid #dadada;
+                background-color:  #f3efef;padding:20;margin-bottom: 20px;">
+                  Can a person test negative and later test
+                  positive for COVID-19? <i class="ion-android-remove" style="margin-right:20px"></i></a>
                 <div id="faq5" class="collapse" data-parent="#faq-list">
 
                   <p>
@@ -902,6 +910,7 @@
 
   <!-- Template Main Javascript File -->
   <script src="static/js/main.js"></script>
+  <script src="//code.tidio.co/qgozc9slf2txtpwm1hzrmjhniebpusxc.js" async></script>
 
 </body>
 

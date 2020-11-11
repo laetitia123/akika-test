@@ -21,6 +21,7 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('akikaapp.urls')),
+
     path('accounts/', include('registration.backends.hmac.urls')),
     # path('accounts/', include('registration.backends.simple.urls')),
     # path('accounts/', include('registration.backends.hmac.urls')),
